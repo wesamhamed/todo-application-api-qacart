@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods, 4 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.qacart.todo.testcases.TodoTest" class="method navigator-link" hash-for-method="shouldBeAbleToAddTodo">shouldBeAbleToAddTodo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.qacart.todo.testcases.TodoTest" class="method navigator-link" hash-for-method="shouldBeAbleToDeleteTodoByID">shouldBeAbleToDeleteTodoByID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.qacart.todo.testcases.TodoTest" class="method navigator-link" hash-for-method="shouldBeAbleToGetATodoByID">shouldBeAbleToGetATodoByID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.qacart.todo.testcases.TodoTest" class="method navigator-link" hash-for-method="shouldNotBeAbleToAddTodoIfIsCompletedMissing">shouldNotBeAbleToAddTodoIfIsCompletedMissing</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.qacart.todo.testcases.UserTest" class="method navigator-link" hash-for-method="ShouldNotBeAbleToLoginIfPasswordIsNotCorrect">ShouldNotBeAbleToLoginIfPasswordIsNotCorrect</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.qacart.todo.testcases.UserTest" class="method navigator-link" hash-for-method="shouldBeAbleToLogin">shouldBeAbleToLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.qacart.todo.testcases.UserTest" class="method navigator-link" hash-for-method="shouldBeAbleToRegister">shouldBeAbleToRegister</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.qacart.todo.testcases.UserTest" class="method navigator-link" hash-for-method="shouldNotBeAbleToRegisterWithTheSameEmail">shouldNotBeAbleToRegisterWithTheSameEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qacart.todo.testcases.TodoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldBeAbleToAddTodo">
+                  </a> <!-- shouldBeAbleToAddTodo -->
+                  <span class="method-name">shouldBeAbleToAddTodo</span>
+                  <div class="stack-trace">java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class com.qacart.todo.models.Todo), not marked as ignorable (6 known properties: &quot;isCompleted&quot;, &quot;item&quot;, &quot;userID&quot;, &quot;_id&quot;, &quot;createdAt&quot;, &quot;__v&quot;])
+ at [Source: (String)&quot;{&quot;message&quot;:&quot;Please Fill a correct Password&quot;}&quot;; line: 1, column: 13] (through reference chain: com.qacart.todo.models.Todo[&quot;message&quot;])
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$1.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$2.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$1.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:231)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at com.qacart.todo.testcases.TodoTest.shouldBeAbleToAddTodo(TodoTest.java:27)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class com.qacart.todo.models.Todo), not marked as ignorable (6 known properties: &quot;isCompleted&quot;, &quot;item&quot;, &quot;userID&quot;, &quot;_id&quot;, &quot;createdAt&quot;, &quot;__v&quot;])
+ at [Source: (String)&quot;{&quot;message&quot;:&quot;Please Fill a correct Password&quot;}&quot;; line: 1, column: 13] (through reference chain: com.qacart.todo.models.Todo[&quot;message&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1127)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2023)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1700)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1678)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:320)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)
+	... 25 more
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldBeAbleToDeleteTodoByID">
+                  </a> <!-- shouldBeAbleToDeleteTodoByID -->
+                  <span class="method-name">shouldBeAbleToDeleteTodoByID</span>
+                  <div class="stack-trace">java.lang.IllegalStateException: Cannot parse object because no supported Content-Type was specified in response. Content-Type was &apos;text/html; charset=utf-8&apos;.
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:95)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$1.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:231)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at com.qacart.todo.testcases.TodoTest.shouldBeAbleToDeleteTodoByID(TodoTest.java:66)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldBeAbleToGetATodoByID">
+                  </a> <!-- shouldBeAbleToGetATodoByID -->
+                  <span class="method-name">shouldBeAbleToGetATodoByID</span>
+                  <div class="stack-trace">java.lang.IllegalStateException: Cannot parse object because no supported Content-Type was specified in response. Content-Type was &apos;text/html; charset=UTF-8&apos;.
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:95)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$1.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:231)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at com.qacart.todo.testcases.TodoTest.shouldBeAbleToGetATodoByID(TodoTest.java:53)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldNotBeAbleToAddTodoIfIsCompletedMissing">
+                  </a> <!-- shouldNotBeAbleToAddTodoIfIsCompletedMissing -->
+                  <span class="method-name">shouldNotBeAbleToAddTodoIfIsCompletedMissing</span>
+                  <div class="stack-trace">java.lang.AssertionError: 
+Expected: is &quot;The email and password combination is not correct, please fill a correct email and password&quot;
+     but: was &quot;Please Fill a correct Password&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at com.qacart.todo.testcases.TodoTest.shouldNotBeAbleToAddTodoIfIsCompletedMissing(TodoTest.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qacart.todo.testcases.UserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ShouldNotBeAbleToLoginIfPasswordIsNotCorrect">
+                  </a> <!-- ShouldNotBeAbleToLoginIfPasswordIsNotCorrect -->
+                  <span class="method-name">ShouldNotBeAbleToLoginIfPasswordIsNotCorrect</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldBeAbleToLogin">
+                  </a> <!-- shouldBeAbleToLogin -->
+                  <span class="method-name">shouldBeAbleToLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldBeAbleToRegister">
+                  </a> <!-- shouldBeAbleToRegister -->
+                  <span class="method-name">shouldBeAbleToRegister</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldNotBeAbleToRegisterWithTheSameEmail">
+                  </a> <!-- shouldNotBeAbleToRegisterWithTheSameEmail -->
+                  <span class="method-name">shouldNotBeAbleToRegisterWithTheSameEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;10&quot; parallel=&quot;classes&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;10&quot; parallel=&quot;classes&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qacart.todo.testcases.TodoTest&quot;/&gt;
+      &lt;class name=&quot;com.qacart.todo.testcases.UserTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'shouldBeAbleToAddTodo')
+data.setCell(0, 2, 'com.qacart.todo.testcases.TodoTest')
+data.setCell(0, 3, 5011);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'ShouldNotBeAbleToLoginIfPasswordIsNotCorrect')
+data.setCell(1, 2, 'com.qacart.todo.testcases.UserTest')
+data.setCell(1, 3, 4700);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'shouldNotBeAbleToAddTodoIfIsCompletedMissing')
+data.setCell(2, 2, 'com.qacart.todo.testcases.TodoTest')
+data.setCell(2, 3, 4502);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'shouldBeAbleToDeleteTodoByID')
+data.setCell(3, 2, 'com.qacart.todo.testcases.TodoTest')
+data.setCell(3, 3, 2643);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'shouldBeAbleToGetATodoByID')
+data.setCell(4, 2, 'com.qacart.todo.testcases.TodoTest')
+data.setCell(4, 3, 2139);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'shouldNotBeAbleToRegisterWithTheSameEmail')
+data.setCell(5, 2, 'com.qacart.todo.testcases.UserTest')
+data.setCell(5, 3, 1593);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'shouldBeAbleToLogin')
+data.setCell(6, 2, 'com.qacart.todo.testcases.UserTest')
+data.setCell(6, 3, 1427);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'shouldBeAbleToRegister')
+data.setCell(7, 2, 'com.qacart.todo.testcases.UserTest')
+data.setCell(7, 3, 883);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qacart.todo.testcases.UserTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ShouldNotBeAbleToLoginIfPasswordIsNotCorrect</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qacart.todo.testcases.TodoTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">shouldBeAbleToAddTodo</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qacart.todo.testcases.UserTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">shouldBeAbleToLogin</span>
+                <span class="method-start">4703 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qacart.todo.testcases.TodoTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">shouldBeAbleToDeleteTodoByID</span>
+                <span class="method-start">5017 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qacart.todo.testcases.UserTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">shouldBeAbleToRegister</span>
+                <span class="method-start">6131 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldNotBeAbleToRegisterWithTheSameEmail</span>
+                <span class="method-start">7016 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qacart.todo.testcases.TodoTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">shouldBeAbleToGetATodoByID</span>
+                <span class="method-start">7661 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">shouldNotBeAbleToAddTodoIfIsCompletedMissing</span>
+                <span class="method-start">9801 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

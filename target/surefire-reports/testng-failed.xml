@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="10" parallel="classes" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="10" parallel="classes" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="com.qacart.todo.testcases.TodoTest">
+        <methods>
+          <include name="shouldBeAbleToGetATodoByID"/>
+          <include name="shouldBeAbleToAddTodo"/>
+          <include name="shouldNotBeAbleToAddTodoIfIsCompletedMissing"/>
+          <include name="shouldBeAbleToDeleteTodoByID"/>
+        </methods>
+      </class> <!-- com.qacart.todo.testcases.TodoTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

@@ -1,0 +1,317 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Oct 11 22:15:27 IDT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>14 seconds (14379 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qacart.todo.testcases.TodoTest.shouldBeAbleToDeleteTodoByID()'><b>shouldBeAbleToDeleteTodoByID</b><br>Test class: com.qacart.todo.testcases.TodoTest</td>
+<td><div><pre>java.lang.IllegalStateException: Cannot parse object because no supported Content-Type was specified in response. Content-Type was &apos;text/html; charset=utf-8&apos;.
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:95)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$1.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:231)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at com.qacart.todo.testcases.TodoTest.shouldBeAbleToDeleteTodoByID(TodoTest.java:66)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1478253916", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1478253916'><pre>java.lang.IllegalStateException: Cannot parse object because no supported Content-Type was specified in response. Content-Type was &apos;text/html; charset=utf-8&apos;.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:95)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$1.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:231)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at com.qacart.todo.testcases.TodoTest.shouldBeAbleToDeleteTodoByID(TodoTest.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>2</td>
+<td>com.qacart.todo.testcases.TodoTest@1356d4d4</td></tr>
+<tr>
+<td title='com.qacart.todo.testcases.TodoTest.shouldBeAbleToGetATodoByID()'><b>shouldBeAbleToGetATodoByID</b><br>Test class: com.qacart.todo.testcases.TodoTest</td>
+<td><div><pre>java.lang.IllegalStateException: Cannot parse object because no supported Content-Type was specified in response. Content-Type was &apos;text/html; charset=UTF-8&apos;.
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:95)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$1.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:231)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at com.qacart.todo.testcases.TodoTest.shouldBeAbleToGetATodoByID(TodoTest.java:53)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace116462291", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace116462291'><pre>java.lang.IllegalStateException: Cannot parse object because no supported Content-Type was specified in response. Content-Type was &apos;text/html; charset=UTF-8&apos;.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:95)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$1.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:231)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at com.qacart.todo.testcases.TodoTest.shouldBeAbleToGetATodoByID(TodoTest.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>2</td>
+<td>com.qacart.todo.testcases.TodoTest@1356d4d4</td></tr>
+<tr>
+<td title='com.qacart.todo.testcases.TodoTest.shouldNotBeAbleToAddTodoIfIsCompletedMissing()'><b>shouldNotBeAbleToAddTodoIfIsCompletedMissing</b><br>Test class: com.qacart.todo.testcases.TodoTest</td>
+<td><div><pre>java.lang.AssertionError: 
+Expected: is &quot;The email and password combination is not correct, please fill a correct email and password&quot;
+     but: was &quot;Please Fill a correct Password&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at com.qacart.todo.testcases.TodoTest.shouldNotBeAbleToAddTodoIfIsCompletedMissing(TodoTest.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1664577347", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1664577347'><pre>java.lang.AssertionError: 
+Expected: is &quot;The email and password combination is not correct, please fill a correct email and password&quot;
+     but: was &quot;Please Fill a correct Password&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at com.qacart.todo.testcases.TodoTest.shouldNotBeAbleToAddTodoIfIsCompletedMissing(TodoTest.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>4</td>
+<td>com.qacart.todo.testcases.TodoTest@1356d4d4</td></tr>
+<tr>
+<td title='com.qacart.todo.testcases.TodoTest.shouldBeAbleToAddTodo()'><b>shouldBeAbleToAddTodo</b><br>Test class: com.qacart.todo.testcases.TodoTest</td>
+<td><div><pre>java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class com.qacart.todo.models.Todo), not marked as ignorable (6 known properties: &quot;isCompleted&quot;, &quot;item&quot;, &quot;userID&quot;, &quot;_id&quot;, &quot;createdAt&quot;, &quot;__v&quot;])
+ at [Source: (String)&quot;{&quot;message&quot;:&quot;Please Fill a correct Password&quot;}&quot;; line: 1, column: 13] (through reference chain: com.qacart.todo.models.Todo[&quot;message&quot;])
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$1.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$2.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$1.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:231)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at com.qacart.todo.testcases.TodoTest.shouldBeAbleToAddTodo(TodoTest.java:27)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class com.qacart.todo.models.Todo), not marked as ignorable (6 known properties: &quot;isCompleted&quot;, &quot;item&quot;, &quot;userID&quot;, &quot;_id&quot;, &quot;createdAt&quot;, &quot;__v&quot;])
+ at [Source: (String)&quot;{&quot;message&quot;:&quot;Please Fill a correct Password&quot;}&quot;; line: 1, column: 13] (through reference chain: com.qacart.todo.models.Todo[&quot;message&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1127)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2023)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1700)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1678)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:320)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)
+	... 25 more
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace428314060", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace428314060'><pre>java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class com.qacart.todo.models.Todo), not marked as ignorable (6 known properties: &quot;isCompleted&quot;, &quot;item&quot;, &quot;userID&quot;, &quot;_id&quot;, &quot;createdAt&quot;, &quot;__v&quot;])
+ at [Source: (String)&quot;{&quot;message&quot;:&quot;Please Fill a correct Password&quot;}&quot;; line: 1, column: 13] (through reference chain: com.qacart.todo.models.Todo[&quot;message&quot;])
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$1.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$2.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$1.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:231)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at com.qacart.todo.testcases.TodoTest.shouldBeAbleToAddTodo(TodoTest.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class com.qacart.todo.models.Todo), not marked as ignorable (6 known properties: &quot;isCompleted&quot;, &quot;item&quot;, &quot;userID&quot;, &quot;_id&quot;, &quot;createdAt&quot;, &quot;__v&quot;])
+ at [Source: (String)&quot;{&quot;message&quot;:&quot;Please Fill a correct Password&quot;}&quot;; line: 1, column: 13] (through reference chain: com.qacart.todo.models.Todo[&quot;message&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1127)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2023)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1700)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1678)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:320)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)
+	... 25 more
+</pre></div></td>
+<td>5</td>
+<td>com.qacart.todo.testcases.TodoTest@1356d4d4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qacart.todo.testcases.UserTest.shouldBeAbleToRegister()'><b>shouldBeAbleToRegister</b><br>Test class: com.qacart.todo.testcases.UserTest</td>
+<td></td>
+<td>0</td>
+<td>com.qacart.todo.testcases.UserTest@2e1d27ba</td></tr>
+<tr>
+<td title='com.qacart.todo.testcases.UserTest.shouldNotBeAbleToRegisterWithTheSameEmail()'><b>shouldNotBeAbleToRegisterWithTheSameEmail</b><br>Test class: com.qacart.todo.testcases.UserTest</td>
+<td></td>
+<td>1</td>
+<td>com.qacart.todo.testcases.UserTest@2e1d27ba</td></tr>
+<tr>
+<td title='com.qacart.todo.testcases.UserTest.ShouldNotBeAbleToLoginIfPasswordIsNotCorrect()'><b>ShouldNotBeAbleToLoginIfPasswordIsNotCorrect</b><br>Test class: com.qacart.todo.testcases.UserTest</td>
+<td></td>
+<td>4</td>
+<td>com.qacart.todo.testcases.UserTest@2e1d27ba</td></tr>
+<tr>
+<td title='com.qacart.todo.testcases.UserTest.shouldBeAbleToLogin()'><b>shouldBeAbleToLogin</b><br>Test class: com.qacart.todo.testcases.UserTest</td>
+<td></td>
+<td>1</td>
+<td>com.qacart.todo.testcases.UserTest@2e1d27ba</td></tr>
+</table><p>
+</body>
+</html>

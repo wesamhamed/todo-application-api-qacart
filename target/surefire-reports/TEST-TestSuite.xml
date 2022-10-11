@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="15.505" tests="8" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1256"/>
+    <property name="java.class.path" value="C:\Users\hp\Desktop\todo-application-api-project\target\test-classes;C:\Users\hp\Desktop\todo-application-api-project\target\classes;C:\Users\hp\.m2\repository\io\rest-assured\rest-assured\5.2.0\rest-assured-5.2.0.jar;C:\Users\hp\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar;C:\Users\hp\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar;C:\Users\hp\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\hp\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\hp\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\hp\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\hp\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\hp\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\hp\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\hp\.m2\repository\io\rest-assured\json-path\5.2.0\json-path-5.2.0.jar;C:\Users\hp\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar;C:\Users\hp\.m2\repository\io\rest-assured\rest-assured-common\5.2.0\rest-assured-common-5.2.0.jar;C:\Users\hp\.m2\repository\io\rest-assured\xml-path\5.2.0\xml-path-5.2.0.jar;C:\Users\hp\.m2\repository\org\testng\testng\7.6.1\testng-7.6.1.jar;C:\Users\hp\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\hp\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\hp\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\hp\.m2\repository\org\webjars\jquery\3.6.0\jquery-3.6.0.jar;C:\Users\hp\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.4\jackson-databind-2.13.4.jar;C:\Users\hp\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.4\jackson-annotations-2.13.4.jar;C:\Users\hp\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.4\jackson-core-2.13.4.jar;C:\Users\hp\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\hp\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\hp\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\hp\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\hp\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="Asia/Jerusalem"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.13\bin"/>
+    <property name="sun.java.command" value="C:\Users\hp\AppData\Local\Temp\surefire9008059032096222721\surefirebooter-20221011221526281_3.jar C:\Users\hp\AppData\Local\Temp\surefire9008059032096222721 2022-10-11T22-15-25_430-jvmRun1 surefire-20221011221526281_1tmp surefire_0-20221011221526281_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\hp\Desktop\todo-application-api-project\target\test-classes;C:\Users\hp\Desktop\todo-application-api-project\target\classes;C:\Users\hp\.m2\repository\io\rest-assured\rest-assured\5.2.0\rest-assured-5.2.0.jar;C:\Users\hp\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar;C:\Users\hp\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar;C:\Users\hp\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\hp\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\hp\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\hp\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\hp\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\hp\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\hp\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\hp\.m2\repository\io\rest-assured\json-path\5.2.0\json-path-5.2.0.jar;C:\Users\hp\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar;C:\Users\hp\.m2\repository\io\rest-assured\rest-assured-common\5.2.0\rest-assured-common-5.2.0.jar;C:\Users\hp\.m2\repository\io\rest-assured\xml-path\5.2.0\xml-path-5.2.0.jar;C:\Users\hp\.m2\repository\org\testng\testng\7.6.1\testng-7.6.1.jar;C:\Users\hp\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\hp\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\hp\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\hp\.m2\repository\org\webjars\jquery\3.6.0\jquery-3.6.0.jar;C:\Users\hp\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.4\jackson-databind-2.13.4.jar;C:\Users\hp\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.4\jackson-annotations-2.13.4.jar;C:\Users\hp\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.4\jackson-core-2.13.4.jar;C:\Users\hp\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\hp\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\hp\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\hp\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\hp\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\hp"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-10-19"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.13"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\hp\Desktop\todo-application-api-project"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\hp\AppData\Local\Temp\surefire9008059032096222721\surefirebooter-20221011221526281_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.13+10-LTS-370"/>
+    <property name="user.name" value="hp"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1256"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\hp\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\hp\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.13"/>
+    <property name="user.dir" value="C:\Users\hp\Desktop\todo-application-api-project"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="env" value="PRODUCTION"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.13\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk-11.0.13\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\hp\Desktop\selenium\chromedriver.exe;C:\Program Files (x86)\Perforce\;C:\Users\hp\Downloads\Compressed\apache-maven-3.8.4\bin;C:\Users\hp\Desktop\ffmpeg-2022-01-03-git-68d0a7e446-full_build\bin;C:\Users\hp\AppData\Local\Android\Sdk\tools\bin;C:\Users\hp\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\nodejs\node_modules\npm\bin;C:\Program Files\dotnet\;C:\Users\hp\Downloads\Compressed\apache-maven-3.8.4\bin;C:\dart-sdk\bin;C:\flutter\bin;C:\Users\hp\Downloads\Compressed\sqlite;C:\Program Files (x86)\dotnet\;D:\Desktop\selenium\drivers;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\hp\Downloads\Compressed\allure-2.19.0\bin;C:\Users\hp\Downloads\Compressed\gradle-7.5.1\bin;C:\Users\hp\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\hp\AppData\Local\Programs\Python\Python310\;C:\Program Files\Java\jdk-11.0.13\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\hp\Desktop\selenium\chromedriver.exe;C:\Program Files (x86)\Perforce\;C:\Users\hp\Downloads\Compressed\apache-maven-3.8.4\bin;C:\Users\hp\Desktop\ffmpeg-2022-01-03-git-68d0a7e446-full_build\bin;C:\Users\hp\AppData\Local\Android\Sdk\tools\bin;C:\Users\hp\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\nodejs\node_modules\npm\bin;C:\Program Files\dotnet\;C:\Users\hp\Downloads\Compressed\apache-maven-3.8.4\bin;C:\dart-sdk\bin;C:\flutter\bin;C:\Users\hp\Downloads\Compressed\sqlite;C:\Program Files (x86)\dotnet\;D:\Desktop\selenium\drivers;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\hp\Downloads\Compressed\allure-2.19.0\bin;C:\Users\hp\Downloads\Compressed\gradle-7.5.1\bin;;C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\Scripts;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.13+10-LTS-370"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="ShouldNotBeAbleToLoginIfPasswordIsNotCorrect" classname="com.qacart.todo.testcases.UserTest" time="4.705">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://qacart-todo.herokuapp.com/api/v1/users/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Tatum",
+    "lastName": "Altenwerth",
+    "email": "rigoberto.gibson@hotmail.com",
+    "password": "iLikeQAcart"
+}
+Request method:	POST
+Request URI:	https://qacart-todo.herokuapp.com/api/v1/users/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Karyl",
+    "lastName": "Schimmel",
+    "email": "beatrice.carter@gmail.com",
+    "password": "iLikeQAcart"
+}
+HTTP/1.1 201 Created
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Set-Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNDVjMGQ0ZjNiZDc1MDAxNjZlZDc4MiIsImZpcnN0TmFtZSI6IlRhdHVtIiwibGFzdE5hbWUiOiJBbHRlbndlcnRoIiwiaWF0IjoxNjY1NTE1NzMyfQ.x186fX32-0x0gNMfHxw7l4UeCgjD8wkQMgBN4ztuyis; Path=/
+Set-Cookie: userID=j%3A%226345c0d4f3bd7500166ed782%22; Path=/
+Set-Cookie: firstName=Tatum; Path=/
+Content-Type: application/json; charset=utf-8
+Content-Length: 282
+Etag: W/"11a-DheGvLLjYTru7MES0hpULiLe7fE"
+Date: Tue, 11 Oct 2022 19:15:32 GMT
+Via: 1.1 vegur
+
+{
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNDVjMGQ0ZjNiZDc1MDAxNjZlZDc4MiIsImZpcnN0TmFtZSI6IlRhdHVtIiwibGFzdE5hbWUiOiJBbHRlbndlcnRoIiwiaWF0IjoxNjY1NTE1NzMyfQ.x186fX32-0x0gNMfHxw7l4UeCgjD8wkQMgBN4ztuyis",
+    "userID": "6345c0d4f3bd7500166ed782",
+    "firstName": "Tatum"
+}
+HTTP/1.1 201 Created
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Set-Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNDVjMGQ0ZjNiZDc1MDAxNjZlZDc4NCIsImZpcnN0TmFtZSI6IkthcnlsIiwibGFzdE5hbWUiOiJTY2hpbW1lbCIsImlhdCI6MTY2NTUxNTczMn0.14iwx6Y-I_95gth7whvntaATM-J01jdL2z8VkeqOQ4c; Path=/
+Set-Cookie: userID=j%3A%226345c0d4f3bd7500166ed784%22; Path=/
+Set-Cookie: firstName=Karyl; Path=/
+Content-Type: application/json; charset=utf-8
+Content-Length: 279
+Etag: W/"117-8/i6rDjKIVvMxagp9Ck+1DvWjS0"
+Date: Tue, 11 Oct 2022 19:15:32 GMT
+Via: 1.1 vegur
+
+{
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNDVjMGQ0ZjNiZDc1MDAxNjZlZDc4NCIsImZpcnN0TmFtZSI6IkthcnlsIiwibGFzdE5hbWUiOiJTY2hpbW1lbCIsImlhdCI6MTY2NTUxNTczMn0.14iwx6Y-I_95gth7whvntaATM-J01jdL2z8VkeqOQ4c",
+    "userID": "6345c0d4f3bd7500166ed784",
+    "firstName": "Karyl"
+}
+Request method:	POST
+Request URI:	https://qacart-todo.herokuapp.com/api/v1/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "rigoberto.gibson@hotmail.com",
+    "password": "wrongPassword"
+}
+Request method:	POST
+Request URI:	https://qacart-todo.herokuapp.com/api/v1/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "item": "Rosemary Sutcliff",
+    "isCompleted": false
+}
+HTTP/1.1 401 Unauthorized
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 105
+Etag: W/"69-+ROAeTYdLtKREH6azCyNv++b54o"
+Date: Tue, 11 Oct 2022 19:15:33 GMT
+Via: 1.1 vegur
+
+{
+    "message": "The email and password combination is not correct, please fill a correct email and password"
+}
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="shouldBeAbleToLogin" classname="com.qacart.todo.testcases.UserTest" time="1.117">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://qacart-todo.herokuapp.com/api/v1/users/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Laquanda",
+    "lastName": "Crona",
+    "email": "nu.padberg@hotmail.com",
+    "password": "iLikeQAcart"
+}
+HTTP/1.1 201 Created
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Set-Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNDVjMGQ2ZjNiZDc1MDAxNjZlZDc4OCIsImZpcnN0TmFtZSI6IlNwZW5jZXIiLCJsYXN0TmFtZSI6IlNjaGFlZmVyIiwiaWF0IjoxNjY1NTE1NzM0fQ.xPAdX1MveS8Xs42yVp1PKL0CKvdZUgDixszLqcQCsTs; Path=/
+Set-Cookie: userID=j%3A%226345c0d6f3bd7500166ed788%22; Path=/
+Set-Cookie: firstName=Spencer; Path=/
+Content-Type: application/json; charset=utf-8
+Content-Length: 284
+Etag: W/"11c-+5kzzoh7t0ZBU4ifTayrTynX2Y0"
+Date: Tue, 11 Oct 2022 19:15:34 GMT
+Via: 1.1 vegur
+
+{
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNDVjMGQ2ZjNiZDc1MDAxNjZlZDc4OCIsImZpcnN0TmFtZSI6IlNwZW5jZXIiLCJsYXN0TmFtZSI6IlNjaGFlZmVyIiwiaWF0IjoxNjY1NTE1NzM0fQ.xPAdX1MveS8Xs42yVp1PKL0CKvdZUgDixszLqcQCsTs",
+    "userID": "6345c0d6f3bd7500166ed788",
+    "firstName": "Spencer"
+}
+Request method:	POST
+Request URI:	https://qacart-todo.herokuapp.com/api/v1/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "sabrina.block@yahoo.com",
+    "password": "iLikeQAcart"
+}
+HTTP/1.1 201 Created
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Set-Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNDVjMGQ2ZjNiZDc1MDAxNjZlZDc4YiIsImZpcnN0TmFtZSI6IkxhcXVhbmRhIiwibGFzdE5hbWUiOiJDcm9uYSIsImlhdCI6MTY2NTUxNTczNH0.7uEhZCyw3HZ7WV7-EhYwTlgujkr94Z4hQEf-QbsQ3z8; Path=/
+Set-Cookie: userID=j%3A%226345c0d6f3bd7500166ed78b%22; Path=/
+Set-Cookie: firstName=Laquanda; Path=/
+Content-Type: application/json; charset=utf-8
+Content-Length: 282
+Etag: W/"11a-z6+jC4ZBVyMihy9jucM3gzAmQEk"
+Date: Tue, 11 Oct 2022 19:15:34 GMT
+Via: 1.1 vegur
+
+{
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNDVjMGQ2ZjNiZDc1MDAxNjZlZDc4YiIsImZpcnN0TmFtZSI6IkxhcXVhbmRhIiwibGFzdE5hbWUiOiJDcm9uYSIsImlhdCI6MTY2NTUxNTczNH0.7uEhZCyw3HZ7WV7-EhYwTlgujkr94Z4hQEf-QbsQ3z8",
+    "userID": "6345c0d6f3bd7500166ed78b",
+    "firstName": "Laquanda"
+}
+Request method:	POST
+Request URI:	https://qacart-todo.herokuapp.com/api/v1/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "item": "The Line of Beauty",
+    "isCompleted": false
+}
+HTTP/1.1 200 OK
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Set-Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNDVjMGQ2ZjNiZDc1MDAxNjZlZDc4OCIsImZpcnN0TmFtZSI6IlNwZW5jZXIiLCJsYXN0TmFtZSI6IlNjaGFlZmVyIiwiaWF0IjoxNjY1NTE1NzM0fQ.xPAdX1MveS8Xs42yVp1PKL0CKvdZUgDixszLqcQCsTs; Path=/
+Set-Cookie: userID=j%3A%226345c0d6f3bd7500166ed788%22; Path=/
+Set-Cookie: firstName=Spencer; Path=/
+Content-Type: application/json; charset=utf-8
+Content-Length: 284
+Etag: W/"11c-+5kzzoh7t0ZBU4ifTayrTynX2Y0"
+Date: Tue, 11 Oct 2022 19:15:34 GMT
+Via: 1.1 vegur
+
+{
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNDVjMGQ2ZjNiZDc1MDAxNjZlZDc4OCIsImZpcnN0TmFtZSI6IlNwZW5jZXIiLCJsYXN0TmFtZSI6IlNjaGFlZmVyIiwiaWF0IjoxNjY1NTE1NzM0fQ.xPAdX1MveS8Xs42yVp1PKL0CKvdZUgDixszLqcQCsTs",
+    "userID": "6345c0d6f3bd7500166ed788",
+    "firstName": "Spencer"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="shouldBeAbleToRegister" classname="com.qacart.todo.testcases.UserTest" time="0.883">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://qacart-todo.herokuapp.com/api/v1/users/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Dung",
+    "lastName": "Hilll",
+    "email": "donnie.stroman@yahoo.com",
+    "password": "iLikeQAcart"
+}
+HTTP/1.1 400 Bad Request
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 44
+Etag: W/"2c-OQksK/mr1BwIe3bT0tzF8TOXm6U"
+Date: Tue, 11 Oct 2022 19:15:35 GMT
+Via: 1.1 vegur
+
+{
+    "message": "Please Fill a correct Password"
+}
+Request method:	DELETE
+Request URI:	https://qacart-todo.herokuapp.com/api/v1/users/loginnull
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 201 Created
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Set-Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNDVjMGQ3ZjNiZDc1MDAxNjZlZDc4ZiIsImZpcnN0TmFtZSI6IkR1bmciLCJsYXN0TmFtZSI6IkhpbGxsIiwiaWF0IjoxNjY1NTE1NzM1fQ.r6nrKkPLvT3Se8pbhy5FPkzCns3RYHWfO1sQcguCzqI; Path=/
+Set-Cookie: userID=j%3A%226345c0d7f3bd7500166ed78f%22; Path=/
+Set-Cookie: firstName=Dung; Path=/
+Content-Type: application/json; charset=utf-8
+Content-Length: 273
+Etag: W/"111-dAubQkt0oDUpd7F3iYULFkfgXQc"
+Date: Tue, 11 Oct 2022 19:15:35 GMT
+Via: 1.1 vegur
+
+{
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNDVjMGQ3ZjNiZDc1MDAxNjZlZDc4ZiIsImZpcnN0TmFtZSI6IkR1bmciLCJsYXN0TmFtZSI6IkhpbGxsIiwiaWF0IjoxNjY1NTE1NzM1fQ.r6nrKkPLvT3Se8pbhy5FPkzCns3RYHWfO1sQcguCzqI",
+    "userID": "6345c0d7f3bd7500166ed78f",
+    "firstName": "Dung"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="shouldNotBeAbleToRegisterWithTheSameEmail" classname="com.qacart.todo.testcases.UserTest" time="0.947">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://qacart-todo.herokuapp.com/api/v1/users/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Frankie",
+    "lastName": "Hoeger",
+    "email": "ivey.gulgowski@gmail.com",
+    "password": "iLikeQAcart"
+}
+HTTP/1.1 201 Created
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Set-Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNDVjMGQ4ZjNiZDc1MDAxNjZlZDc5MiIsImZpcnN0TmFtZSI6Ik1lbGlzc2EiLCJsYXN0TmFtZSI6IkJhdWNoIiwiaWF0IjoxNjY1NTE1NzM2fQ.-V1Sdp5vubgQ2eDe8cGkybDblDKXhknprgSZw8zhw2k; Path=/
+Set-Cookie: userID=j%3A%226345c0d8f3bd7500166ed792%22; Path=/
+Set-Cookie: firstName=Melissa; Path=/
+Content-Type: application/json; charset=utf-8
+Content-Length: 280
+Etag: W/"118-eydARDGcF9QRwrJKcpqDl9ky1pk"
+Date: Tue, 11 Oct 2022 19:15:36 GMT
+Via: 1.1 vegur
+
+{
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNDVjMGQ4ZjNiZDc1MDAxNjZlZDc5MiIsImZpcnN0TmFtZSI6Ik1lbGlzc2EiLCJsYXN0TmFtZSI6IkJhdWNoIiwiaWF0IjoxNjY1NTE1NzM2fQ.-V1Sdp5vubgQ2eDe8cGkybDblDKXhknprgSZw8zhw2k",
+    "userID": "6345c0d8f3bd7500166ed792",
+    "firstName": "Melissa"
+}
+Request method:	POST
+Request URI:	https://qacart-todo.herokuapp.com/api/v1/users/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Melissa",
+    "lastName": "Bauch",
+    "email": "laverne.torp@gmail.com",
+    "password": "iLikeQAcart"
+}
+HTTP/1.1 201 Created
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Set-Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNDVjMGQ5ZjNiZDc1MDAxNjZlZDc5NSIsImZpcnN0TmFtZSI6IkZyYW5raWUiLCJsYXN0TmFtZSI6IkhvZWdlciIsImlhdCI6MTY2NTUxNTczN30.AmrS4oC6i4WVKRn44aHTZJ5DLWS8pAbmlD1esJ6CR5w; Path=/
+Set-Cookie: userID=j%3A%226345c0d9f3bd7500166ed795%22; Path=/
+Set-Cookie: firstName=Frankie; Path=/
+Content-Type: application/json; charset=utf-8
+Content-Length: 281
+Etag: W/"119-MTr5lgEfez6LPEZS9v1JzW0IwX0"
+Date: Tue, 11 Oct 2022 19:15:37 GMT
+Via: 1.1 vegur
+
+{
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNDVjMGQ5ZjNiZDc1MDAxNjZlZDc5NSIsImZpcnN0TmFtZSI6IkZyYW5raWUiLCJsYXN0TmFtZSI6IkhvZWdlciIsImlhdCI6MTY2NTUxNTczN30.AmrS4oC6i4WVKRn44aHTZJ5DLWS8pAbmlD1esJ6CR5w",
+    "userID": "6345c0d9f3bd7500166ed795",
+    "firstName": "Frankie"
+}
+Request method:	POST
+Request URI:	https://qacart-todo.herokuapp.com/api/v1/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "item": "Absalom, Absalom!",
+    "isCompleted": false
+}
+HTTP/1.1 400 Bad Request
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 53
+Etag: W/"35-dsxV0+vy1L0TgNQY0Spaqv/j9fw"
+Date: Tue, 11 Oct 2022 19:15:37 GMT
+Via: 1.1 vegur
+
+{
+    "message": "Email is already exists in the Database"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="shouldBeAbleToAddTodo" classname="com.qacart.todo.testcases.TodoTest" time="0.308">
+    <failure message="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class com.qacart.todo.models.Todo), not marked as ignorable (6 known properties: &quot;isCompleted&quot;, &quot;item&quot;, &quot;userID&quot;, &quot;_id&quot;, &quot;createdAt&quot;, &quot;__v&quot;])&#10; at [Source: (String)&quot;{&quot;message&quot;:&quot;Please Fill a correct Password&quot;}&quot;; line: 1, column: 13] (through reference chain: com.qacart.todo.models.Todo[&quot;message&quot;])" type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: 
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "message" (class com.qacart.todo.models.Todo), not marked as ignorable (6 known properties: "isCompleted", "item", "userID", "_id", "createdAt", "__v"])
+ at [Source: (String)"{"message":"Please Fill a correct Password"}"; line: 1, column: 13] (through reference chain: com.qacart.todo.models.Todo["message"])
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$1.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$2.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$1.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:231)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at com.qacart.todo.testcases.TodoTest.shouldBeAbleToAddTodo(TodoTest.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "message" (class com.qacart.todo.models.Todo), not marked as ignorable (6 known properties: "isCompleted", "item", "userID", "_id", "createdAt", "__v"])
+ at [Source: (String)"{"message":"Please Fill a correct Password"}"; line: 1, column: 13] (through reference chain: com.qacart.todo.models.Todo["message"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1127)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2023)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1700)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1678)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:320)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)
+	... 25 more
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://qacart-todo.herokuapp.com/api/v1/users/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Spencer",
+    "lastName": "Schaefer",
+    "email": "sabrina.block@yahoo.com",
+    "password": "iLikeQAcart"
+}
+HTTP/1.1 400 Bad Request
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 44
+Etag: W/"2c-OQksK/mr1BwIe3bT0tzF8TOXm6U"
+Date: Tue, 11 Oct 2022 19:15:33 GMT
+Via: 1.1 vegur
+
+{
+    "message": "Please Fill a correct Password"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="shouldBeAbleToDeleteTodoByID" classname="com.qacart.todo.testcases.TodoTest" time="0.646">
+    <failure message="Cannot parse object because no supported Content-Type was specified in response. Content-Type was &apos;text/html; charset=utf-8&apos;." type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: Cannot parse object because no supported Content-Type was specified in response. Content-Type was 'text/html; charset=utf-8'.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:95)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$1.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:231)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at com.qacart.todo.testcases.TodoTest.shouldBeAbleToDeleteTodoByID(TodoTest.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://qacart-todo.herokuapp.com/api/v1/users/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Melissa",
+    "lastName": "Bauch",
+    "email": "laverne.torp@gmail.com",
+    "password": "iLikeQAcart"
+}
+HTTP/1.1 404 Not Found
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Security-Policy: default-src 'none'
+X-Content-Type-Options: nosniff
+Content-Type: text/html; charset=utf-8
+Content-Length: 164
+Date: Tue, 11 Oct 2022 19:15:36 GMT
+Via: 1.1 vegur
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Error</title>
+  </head>
+  <body>
+    <pre>Cannot DELETE /api/v1/users/loginnull</pre>
+  </body>
+</html>
+]]></system-out>
+  </testcase>
+  <testcase name="shouldBeAbleToGetATodoByID" classname="com.qacart.todo.testcases.TodoTest" time="2.14">
+    <failure message="Cannot parse object because no supported Content-Type was specified in response. Content-Type was &apos;text/html; charset=UTF-8&apos;." type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: Cannot parse object because no supported Content-Type was specified in response. Content-Type was 'text/html; charset=UTF-8'.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:95)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$1.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:231)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at com.qacart.todo.testcases.TodoTest.shouldBeAbleToGetATodoByID(TodoTest.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]></failure>
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 44
+Etag: W/"2c-OQksK/mr1BwIe3bT0tzF8TOXm6U"
+Date: Tue, 11 Oct 2022 19:15:37 GMT
+Via: 1.1 vegur
+
+{
+    "message": "Please Fill a correct Password"
+}
+Request method:	GET
+Request URI:	https://qacart-todo.herokuapp.com/api/v1/users/loginnull
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Sun, 25 Sep 2022 19:24:17 GMT
+Etag: W/"8a2-183761b7ee8"
+Content-Type: text/html; charset=UTF-8
+Content-Length: 2210
+Date: Tue, 11 Oct 2022 19:15:38 GMT
+Via: 1.1 vegur
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="icon" href="/logo.png"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="theme-color" content="#000000"/>
+    <meta name="description" content="Web site created using create-react-app"/>
+    <link rel="apple-touch-icon" href="/logo192.png"/>
+    <link rel="manifest" href="/manifest.json"/>
+    <title>React App</title>
+    <link href="/static/css/main.9827a559.chunk.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"/>
+    <script>!function(e){function t(t){for(var n,l,i=t[0],f=t[1],a=t[2],p=0,s=[];p&lt;i.length;p++)l=i[p],Object.prototype.hasOwnProperty.call(o,l)&amp;&amp;o[l]&amp;&amp;s.push(o[l][0]),o[l]=0;for(n in f)Object.prototype.hasOwnProperty.call(f,n)&amp;&amp;(e[n]=f[n]);for(c&amp;&amp;c(t);s.length;)s.shift()();return u.push.apply(u,a||[]),r()}function r(){for(var e,t=0;t&lt;u.length;t++){for(var r=u[t],n=!0,i=1;i&lt;r.length;i++){var f=r[i];0!==o[f]&amp;&amp;(n=!1)}n&amp;&amp;(u.splice(t--,1),e=l(l.s=r[0]))}return e}var n={},o={1:0},u=[];function l(t){if(n[t])return n[t].exports;var r=n[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=e,l.c=n,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){"undefined"!=typeof Symbol&amp;&amp;Symbol.toStringTag&amp;&amp;Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(e,t){if(1&amp;t&amp;&amp;(e=l(e)),8&amp;t)return e;if(4&amp;t&amp;&amp;"object"==typeof e&amp;&amp;e&amp;&amp;e.__esModule)return e;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&amp;t&amp;&amp;"string"!=typeof e)for(var n in e)l.d(r,n,function(t){return e[t]}.bind(null,n));return r},l.n=function(e){var t=e&amp;&amp;e.__esModule?function(){return e.default}:function(){return e};return l.d(t,"a",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p="/";var i=this.webpackJsonpclient=this.webpackJsonpclient||[],f=i.push.bind(i);i.push=t,i=i.slice();for(var a=0;a&lt;i.length;a++)t(i[a]);var c=f;r()}([])</script>
+    <script src="/static/js/2.4672ce69.chunk.js"/>
+    <script src="/static/js/main.16b47f6f.chunk.js"/>
+  </body>
+</html>
+]]></system-out>
+  </testcase>
+  <testcase name="shouldNotBeAbleToAddTodoIfIsCompletedMissing" classname="com.qacart.todo.testcases.TodoTest" time="4.505">
+    <failure message="&#10;Expected: is &quot;The email and password combination is not correct, please fill a correct email and password&quot;&#10;     but: was &quot;Please Fill a correct Password&quot;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+
+Expected: is "The email and password combination is not correct, please fill a correct email and password"
+     but: was "Please Fill a correct Password"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at com.qacart.todo.testcases.TodoTest.shouldNotBeAbleToAddTodoIfIsCompletedMissing(TodoTest.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://qacart-todo.herokuapp.com/api/v1/users/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Penni",
+    "lastName": "Rippin",
+    "email": "sammy.breitenberg@gmail.com",
+    "password": "iLikeQAcart"
+}
+HTTP/1.1 201 Created
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Set-Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNDVjMGRkZjNiZDc1MDAxNjZlZDc5OSIsImZpcnN0TmFtZSI6IlBlbm5pIiwibGFzdE5hbWUiOiJSaXBwaW4iLCJpYXQiOjE2NjU1MTU3NDF9.BJVXGzjwlLpHlN6VfCalABkQu_m47fufw8fAMnJ0iLQ; Path=/
+Set-Cookie: userID=j%3A%226345c0ddf3bd7500166ed799%22; Path=/
+Set-Cookie: firstName=Penni; Path=/
+Content-Type: application/json; charset=utf-8
+Content-Length: 276
+Etag: W/"114-XfziJCejh08WlruESpXxCNmI6RA"
+Date: Tue, 11 Oct 2022 19:15:41 GMT
+Via: 1.1 vegur
+
+{
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNDVjMGRkZjNiZDc1MDAxNjZlZDc5OSIsImZpcnN0TmFtZSI6IlBlbm5pIiwibGFzdE5hbWUiOiJSaXBwaW4iLCJpYXQiOjE2NjU1MTU3NDF9.BJVXGzjwlLpHlN6VfCalABkQu_m47fufw8fAMnJ0iLQ",
+    "userID": "6345c0ddf3bd7500166ed799",
+    "firstName": "Penni"
+}
+Request method:	POST
+Request URI:	https://qacart-todo.herokuapp.com/api/v1/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "item": "Learn Appium"
+}
+HTTP/1.1 400 Bad Request
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 44
+Etag: W/"2c-OQksK/mr1BwIe3bT0tzF8TOXm6U"
+Date: Tue, 11 Oct 2022 19:15:42 GMT
+Via: 1.1 vegur
+
+{
+    "message": "Please Fill a correct Password"
+}
+]]></system-out>
+  </testcase>
+</testsuite>
